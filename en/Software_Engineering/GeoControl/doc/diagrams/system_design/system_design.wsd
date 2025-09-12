@@ -1,0 +1,35 @@
+@startuml
+!define RECTANGLE class
+
+package "Geocontrol Software System" {
+
+  RECTANGLE "API Gateway" as ApiGateway
+  RECTANGLE "Auth Service" as AuthService
+  RECTANGLE "User Management" as UserService
+  RECTANGLE "Network Management" as NetworkService
+  RECTANGLE "Gateway Management" as GatewayService
+  RECTANGLE "Sensor Management" as SensorService
+  RECTANGLE "Statistics Service" as StatisticsService
+  RECTANGLE "Role-Based Access Control" as RBAC
+  RECTANGLE "Database" as DB
+
+  ' API Gateway routing
+  ApiGateway --> AuthService : Auth request\n(Token, Login)
+  ApiGateway --> UserService : CRUD Users, Roles
+  ApiGateway --> NetworkService : CRUD Networks
+  ApiGateway --> GatewayService : CRUD Gateways
+  ApiGateway --> SensorService : CRUD Sensors
+  ApiGateway --> StatisticsService : Request Stats
+  ApiGateway --> RBAC : Permission Check
+
+  ' Services interacting with the DB
+  AuthService --> DB : users, roles, tokens
+  UserService --> DB : users, roles
+  NetworkService --> DB : networks
+  GatewayService --> DB : gateways
+  SensorService --> DB : sensors
+  StatisticsService --> DB : measurements, stats
+  RBAC --> DB : access rules
+}
+
+@enduml

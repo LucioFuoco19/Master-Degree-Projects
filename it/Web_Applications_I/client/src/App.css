@@ -1,0 +1,29 @@
+/* App global reset and layout */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Flexbox horizontal center */
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+/* Central box*/
+.main-container {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+

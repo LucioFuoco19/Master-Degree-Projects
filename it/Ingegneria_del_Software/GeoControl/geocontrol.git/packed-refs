@@ -1,0 +1,14 @@
+# pack-refs with: peeled fully-peeled sorted 
+06efca27e83fa77e8f03bfa634c8c5f41f8a5e92 refs/heads/implementation
+ff62f4ccdc721939deadb7f54f7aa87b03cde094 refs/heads/main
+9a51cf5ec362a758c81f8eed8255a18be42712bf refs/heads/measurementsImplementation
+78ca248988f1c293197dc3571d2a02b95ce98484 refs/heads/requirements-doc
+de36aabeb6975d9071943bfe744f05635d22b353 refs/merge-requests/12/head
+d7fd89168b62e1df3a3543be86effad1ebef54ee refs/merge-requests/12/merge
+bf3954b5534a3b329d2d97f0e26fba3df0c60896 refs/merge-requests/13/head
+9c6453e14291584ed3f6e938473c3075804dc38f refs/merge-requests/13/merge
+30023c0e8800b306f98a023e3f23732cbf59d5d6 refs/merge-requests/14/head
+6393a6ae7a7123a59834136b26dfa64b890b5aba refs/merge-requests/14/merge
+094b57e15460506f126b39840d4068d73a94647b refs/merge-requests/15/head
+1ea69a2082cca5c117c27e6855f8a0f4c9d70be2 refs/merge-requests/15/merge
+1f194f0c6c490c4073920aff552198e3c5101db8 refs/tags/01-Task_1

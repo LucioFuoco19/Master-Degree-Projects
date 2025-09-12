@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://git-softeng.polito.it/se2024-25/gruppo-27/geocontrol
+	fetch = +refs/*:refs/*
+	mirror = true

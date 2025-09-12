@@ -1,0 +1,23 @@
+@startuml
+
+node "Sensor" as sensor
+
+component "Web App (Frontend)" as webApp
+node "Client Browser" as client
+
+node "Gateway" as gateway
+
+node "Server" as server {
+  database "Database" as DB
+}
+component "GeoControl Application" as geoControlApp
+
+
+' Connections
+sensor -down-> gateway : Serial connection
+gateway -down-> server : sends data via\nHTTP/HTTPS
+client -left-- webApp : <<deploy>>
+server -right-- geoControlApp : <<deploy>>
+client <--> server : HTTP/HTTPS
+
+@enduml

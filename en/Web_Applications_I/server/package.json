@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "connect-mongo": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "sqlite": "^4.2.1",
+    "sqlite3": "^5.1.6"
+  }
+}
