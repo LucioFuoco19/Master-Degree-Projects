@@ -1,7 +1,7 @@
 # Master-Degree-Projects
 
-- IT:Seleziona la lingua che preferisci per consultare i miei progetti.
-- EN:Select the language you prefer to browse my projects.
+- IT: Seleziona la lingua che preferisci per consultare i miei progetti.
+- EN: Select the language you prefer to browse my projects.
 ---
 <details>
 <summary>🇮🇹 Italiano</summary>
@@ -198,3 +198,12 @@ It provides dedicated functionalities for both **teachers** and **students**.
 ---
 </details>
 </details>
+ 
+---
+
+### 📬 Contacts    
+
+[![Email](https://img.shields.io/badge/Email-fuoco.lucio19%40gmail.com-red?logo=gmail&logoColor=white)](mailto:fuoco.lucio19@gmail.com)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Lucio%20Fuoco-blue?logo=linkedin)](https://www.linkedin.com/in/lucio-fuoco-2817422a7/)  
+
+---
