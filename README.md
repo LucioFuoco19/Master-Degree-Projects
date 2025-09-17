@@ -155,8 +155,6 @@ Offre funzionalità dedicate sia per i **docenti** che per gli **studenti**.
 - **Strumenti di sviluppo**:  
   - [npm](https://www.npmjs.com/) (gestione pacchetti)  
   - [GitHub](https://github.com/) (version control e repository)  
-
----
 ---
 - [Group Assignments](it/Web_Applications_I)
 ---
