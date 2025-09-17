@@ -28,6 +28,28 @@ Questa versione semplificata di **Pac-Man** riproduce il classico gioco arcade c
 - **Fantasma con IA**: è stato implementato un fantasma che col progredire dei secondi aumenta progressivamente la propria velocità. I suoi movimenti sono guidati da un algoritmo basato sulla **distanza euclidea**, che lo indirizza verso Pac-Man.  
 - **Visualizzazione punteggio tramite CAN**: è stata aggiunta una modalità che permette di visualizzare il punteggio del giocatore attraverso l’interfaccia di comunicazione **CAN bus**.  
 ---
+### 🛠️ Tecnologie e strumenti
+
+- **Linguaggio di programmazione**:  
+  - [C](https://en.wikipedia.org/wiki/C_(programming_language)) (sviluppo del gioco, gestione periferiche e logica di gioco)
+
+- **Ambiente di sviluppo**:  
+  - [Keil µVision](https://www.keil.com/) (compilazione, debug ed emulazione)  
+  - Compilation target: **SW_Debug** (per emulare il comportamento della LandTiger Board)
+
+- **Hardware / Emulator**:  
+  - [LandTiger Board LPC1768](http://www.embedinfo.com/landtiger/) (microcontrollore ARM Cortex-M3, display integrato, joystick, pulsanti, periferiche)  
+  - Emulatore fornito da Keil (per chi non dispone della board fisica)
+
+- **Caratteristiche aggiuntive**:  
+  - **Speaker**: configurazione e utilizzo per effetti sonori di gioco  
+  - **CAN Bus**: gestione e comunicazione via Controller Area Network  
+  - **Fantasma IA**: implementazione di un fantasma con algoritmo basato sulla **distanza euclidea** per inseguire Pac-Man  
+
+- **Debug & Testing**:  
+  - Keil debugger con visualizzazione periferiche (display, joystick, interruzioni, audio)  
+
+---
 - [PAC-MAN](it/Architettura_Dei_Sistemi_Di_Elaborazione)
 ---
 </details>
@@ -60,8 +82,26 @@ Il progetto è stato sviluppato durante il corso di *Ingegneria del Software* (a
   - Affidabilità: massimo 6 misurazioni perse per sensore/anno.  
   - Efficienza: tempo di risposta < 0,5 secondi.  
   - Localizzazione: timestamp in UTC.  
+---
+### 🛠️ Tecnologie e strumenti
 
+- **Linguaggio di programmazione**:  
+  - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (implementazione delle API, logica applicativa, gestione dei moduli)
 
+- **Ambiente di sviluppo**:  
+  - [Visual Studio Code](https://code.visualstudio.com/) (sviluppo e debugging)  
+
+- **Backend & Architettura**:  
+  - [Node.js](https://nodejs.org/) + [Express.js](https://expressjs.com/) (API REST, routing modulare)  
+  - [Docker](https://www.docker.com/) (containerizzazione e gestione dell’ambiente di esecuzione)  
+
+- **Version Control & Collaboration**:  
+  - [GitLab](https://about.gitlab.com/) (repository, branching, merge, gestione del progetto)  
+
+- **Testing**:  
+  - **White-box testing** (copertura del codice, test su funzioni e moduli)  
+  - **Black-box testing** (test funzionali e di sistema)  
+  - [Postman](https://www.postman.com/) (test isolati di alcune route API)  
 ---
 - [GeoControl](it/Ingegneria_del_Software)
 ---
@@ -94,14 +134,33 @@ Offre funzionalità dedicate sia per i **docenti** che per gli **studenti**.
   - **Frontend**: React (hooks, state, context, effects)  
   - **Database**: SQLite pre-popolato con almeno 20 studenti e 2 docenti (con almeno 1 assignment aperto e 1 chiuso).  
   - **Autenticazione**: accesso separato per docenti e studenti.  
+---
+### 🛠️ Tecnologie e Strumenti
 
+- **Frontend**:  
+  - [React 19](https://react.dev/) (SPA, Strict Mode, functional components, hooks, state, context, effects)  
+  - [React Router](https://reactrouter.com/) (gestione delle rotte lato client)  
+
+- **Backend**:  
+  - [Node.js 22.x (LTS)](https://nodejs.org/)  
+  - [Express.js](https://expressjs.com/) (HTTP API, routing, middleware)  
+  - [Passport.js](http://www.passportjs.org/) (autenticazione con session cookies)  
+  - [bcrypt](https://www.npmjs.com/package/bcrypt) (hashing e salting delle credenziali)  
+  - [CORS](https://www.npmjs.com/package/cors) (configurazione “two servers” pattern)  
+  - [nodemon](https://nodemon.io/) (per avvio e hot-reload del server)  
+
+- **Database**:  
+  - [SQLite](https://www.sqlite.org/) (archiviazione dati su file)  
+
+- **Strumenti di sviluppo**:  
+  - [npm](https://www.npmjs.com/) (gestione pacchetti)  
+  - [GitHub](https://github.com/) (version control e repository)  
+
+---
 ---
 - [Group Assignments](it/Web_Applications_I)
 ---
 </details>
-
-
-
 </details>
 
 ---
@@ -130,12 +189,34 @@ This simplified version of **Pac-Man** reproduces the classic arcade game with t
 - **AI Ghost**: a ghost was implemented which progressively increases its speed as time passes. Its movement is guided by an algorithm based on the **Euclidean distance**, which directs it toward Pac-Man.  
 - **Score visualization via CAN**: a feature was added to display the player’s score using the **CAN bus** communication interface.  
 ---
+### 🛠️ Technologies & Tools
+
+- **Programming Language**:  
+  - [C](https://en.wikipedia.org/wiki/C_(programming_language)) (game development, peripheral management, and game logic)
+
+- **Development Environment**:  
+  - [Keil µVision](https://www.keil.com/) (compilation, debugging, and emulation)  
+  - Compilation target: **SW_Debug** (to emulate the behavior of the LandTiger Board)
+
+- **Hardware / Emulator**:  
+  - [LandTiger Board LPC1768](http://www.embedinfo.com/landtiger/) (ARM Cortex-M3 microcontroller, integrated display, joystick, buttons, peripherals)  
+  - Keil emulator (for students without the physical board)
+
+- **Additional Features**:  
+  - **Speaker**: configuration and usage for in-game sound effects  
+  - **CAN Bus**: communication and management via Controller Area Network  
+  - **Ghost AI**: implementation of a ghost using the **Euclidean distance** algorithm to chase Pac-Man  
+
+- **Debug & Testing**:  
+  - Keil debugger with peripheral visualization (display, joystick, interrupts, audio)  
+
+---
 - [PAC-MAN](en/Computer_Architectures)
 ---
 </details>
 
 <details>
-<summary><b>Software Engineering</b></summary>
+<summary>Software Engineering</summary>
 
 **Description**  
 **GeoControl** is a **monitoring system** designed to manage networks of sensors that measure geological, meteorological, and environmental variables (e.g., temperature, humidity, pressure, gas concentration, position).  
@@ -162,11 +243,29 @@ The project was developed during the *Software Engineering* course (AY 2024–20
   - Reliability: max 6 lost measurements per sensor/year.  
   - Efficiency: response time < 0.5 sec.  
   - Localization: timestamps in UTC.  
-
 ---
+### 🛠️ Technologies & Tools
 
-🔗 [GeoControl](en/Software_Engineering)
+- **Programming Language**:  
+  - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (API implementation, application logic, module management)
 
+- **Development Environment**:  
+  - [Visual Studio Code](https://code.visualstudio.com/) (development and debugging)  
+
+- **Backend & Architecture**:  
+  - [Node.js](https://nodejs.org/) + [Express.js](https://expressjs.com/) (REST APIs, modular routing)  
+  - [Docker](https://www.docker.com/) (containerization and execution environment management)  
+
+- **Version Control & Collaboration**:  
+  - [GitLab](https://about.gitlab.com/) (repository, branching, merging, project management)  
+
+- **Testing**:  
+  - **White-box testing** (code coverage, unit and module testing)  
+  - **Black-box testing** (functional and system testing)  
+  - [Postman](https://www.postman.com/) (isolated testing of specific API routes)  
+---
+- [GeoControl](en/Software_Engineering)
+---
 </details>
 
 
@@ -198,6 +297,28 @@ It provides dedicated functionalities for both **teachers** and **students**.
   - **Frontend**: React (hooks, state, context, effects)  
   - **Database**: SQLite preloaded with at least 20 students and 2 teachers (with at least 1 open and 1 closed assignment).  
   - **Authentication**: separate login and access for teachers and students.
+---
+### 🛠️ Technologies & Tools
+
+- **Frontend**:  
+  - [React 19](https://react.dev/) (SPA, Strict Mode, functional components, hooks, state, context, effects)  
+  - [React Router](https://reactrouter.com/) (client-side route management)  
+
+- **Backend**:  
+  - [Node.js 22.x (LTS)](https://nodejs.org/)  
+  - [Express.js](https://expressjs.com/) (HTTP API, routing, middleware)  
+  - [Passport.js](http://www.passportjs.org/) (authentication with session cookies)  
+  - [bcrypt](https://www.npmjs.com/package/bcrypt) (credential hashing and salting)  
+  - [CORS](https://www.npmjs.com/package/cors) (configuration model “two servers”)  
+  - [nodemon](https://nodemon.io/) (for startup and server hot-reload)  
+
+- **Database**:  
+  - [SQLite](https://www.sqlite.org/) (data storage on file)  
+
+- **Development Tools**:  
+  - [npm](https://www.npmjs.com/) (packet management)  
+  - [GitHub](https://github.com/) (version control and repository)  
+
 ---
 - [Group Assignments](en/Web_Applications_I)
 ---
