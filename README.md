@@ -136,7 +136,7 @@ This simplified version of **Pac-Man** reproduces the classic arcade game with t
 
 <details>
 <summary>Software Engineering</summary>
-## Description
+## Description : 
 **GeoControl** is a **monitoring system** designed to manage networks of sensors that measure geological, meteorological, and environmental variables (e.g., temperature, humidity, pressure, gas concentration, position).  
 The project was developed during the *Software Engineering* course (AY 2024–2025) and focuses on a **simulated version** of the system (no real hardware required).
 
