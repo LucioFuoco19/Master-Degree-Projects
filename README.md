@@ -181,6 +181,33 @@ Sviluppo di un'applicazione client/server denominata **Ruggine**, progettata per
 - [Ruggine](it/Programmazione_di_sistema)
 ---
 </details>
+<details>
+<summary>Advanced Machine Learning - Semantic Correspondence</summary>
+
+## Descrizione:
+Il progetto si focalizza sulla **Semantic Correspondence**, ovvero l'individuazione di corrispondenze a livello di pixel tra parti semanticamente simili di oggetti in immagini diverse (es. l'occhio di un gatto e quello di un lupo). Sono stati utilizzati e confrontati i più recenti **Vision Foundation Models** per estrarre rappresentazioni ricche senza supervisione esplicita.
+
+### Funzionalità e Fasi:
+- **Baseline Zero-Shot**: Valutazione di modelli frozen (DINOv2, SAM, DINOv3) su benchmark SPair-71k utilizzando la similarità cosidica.
+- **Light Fine-tuning**: Adattamento degli ultimi layer del backbone per migliorare la precisione locale.
+- **Window Soft-Argmax**: Implementazione di una regola di predizione avanzata per ottenere precisione sub-pixel e ridurre il rumore rispetto all'argmax classico.
+- **Analisi PCK**: Valutazione rigorosa tramite la metrica *Percentage of Correct Keypoints* a diverse soglie di precisione.
+
+### 📄 Paper Scientifico
+Abbiamo redatto un paper tecnico che descrive l'architettura, i test effettuati e i risultati ottenuti.
+[![Paper PDF](https://img.shields.io/badge/Documentazione-Paper_Project-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](it/Advanced_Machine_Learning/Paper_Semantic_Correspondence.pdf)
+
+---
+### 🛠️ Tecnologie e strumenti
+- [PyTorch](https://pytorch.org/) (Sviluppo modelli e fine-tuning)
+- **Backbones**: DINOv2, DINOv3, Segment Anything (SAM), Stable Diffusion Features
+- **Dataset**: SPair-71k
+- [Google Colab](https://colab.research.google.com/) (Addestramento e inferenza)
+
+---
+- [Semantic Correspondence Project](it/Advanced_Machine_Learning)
+---
+</details>
 </details>
 
 ---
@@ -365,6 +392,33 @@ Development of a client/server application called **Ruggine**, designed for mana
 
 ---
 - [Ruggine](en/System_And_Device_Programming)
+---
+</details>
+<details>
+<summary>Advanced Machine Learning - Semantic Correspondence</summary>
+
+## Description:
+This project focuses on **Semantic Correspondence**: finding pixel-level matches between semantically similar parts of objects across different images. By leveraging state-of-the-art **Vision Foundation Models**, we extracted dense internal representations to perform zero-shot and supervised matching.
+
+### Key Features & Stages:
+- [cite_start]**Training-free Baseline**: Comparative analysis of frozen encoders (DINOv2, SAM, DINOv3) using cosine similarity on the SPair-71k benchmark[cite: 18, 21, 26, 33].
+- [cite_start]**Light Fine-tuning**: Targeted adaptation of the backbone's final layers to boost spatial accuracy[cite: 22, 46].
+- [cite_start]**Window Soft-Argmax**: Implementation of a sub-pixel refinement rule to overcome the limitations of discrete argmax, making predictions robust to noise[cite: 23, 52, 54].
+- [cite_start]**PCK Evaluation**: Rigorous performance tracking using the *Percentage of Correct Keypoints* metric across multiple thresholds (0.05, 0.1, 0.2)[cite: 38, 39, 40].
+
+### 📄 Scientific Paper
+We authored a comprehensive technical paper detailing the methodology, experiments, and comparative results of the different backbones.
+[![Paper PDF](https://img.shields.io/badge/Documentation-Project_Paper-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](en/Advanced_Machine_Learning/Paper_Semantic_Correspondence.pdf)
+
+---
+### 🛠️ Technologies & Tools
+- [PyTorch](https://pytorch.org/) (Model development and fine-tuning)
+- [cite_start]**Backbones**: DINOv2, DINOv3, Segment Anything (SAM), Stable Diffusion Features [cite: 34, 35, 36, 84]
+- [cite_start]**Datasets**: SPair-71k [cite: 26]
+- [Google Colab](https://colab.research.google.com/) (Training and inference)
+
+---
+- [Semantic Correspondence Project](en/Advanced_Machine_Learning)
 ---
 </details>
 </details>
