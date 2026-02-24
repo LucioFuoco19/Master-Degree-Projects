@@ -163,7 +163,7 @@ Offre funzionalità dedicate sia per i **docenti** che per gli **studenti**.
 
 ---
 <details>
-<summary>🇬🇧 English</summary>
+<summary>EN English</summary>
 
 In this repository I collect the projects developed, both individually and in groups, during my **Master's degree in Artificial Intelligence & Data Analytics** at Politecnico di Torino. They will be progressively added as my studies advance.  
 
