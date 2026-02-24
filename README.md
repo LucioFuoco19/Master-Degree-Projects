@@ -178,7 +178,7 @@ Sviluppo di un'applicazione client/server denominata **Ruggine**, progettata per
 - **Networking Stack**: Gestione socket client/server per la comunicazione real-time.
 
 ---
-- [Ruggine](it/Programmazione_di_sistena)
+- [Ruggine](it/Programmazione_di_sistema)
 ---
 </details>
 </details>
