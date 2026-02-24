@@ -159,11 +159,33 @@ Offre funzionalità dedicate sia per i **docenti** che per gli **studenti**.
 - [Group Assignments](it/Web_Applications_I)
 ---
 </details>
+<details>
+  <summary>Programmazione di Sistema</summary>
+## Descrizione: 
+Sviluppo di un'applicazione client/server denominata **Ruggine**, progettata per la gestione di una chat testuale multipiattaforma. Il progetto si focalizza sull'efficienza delle prestazioni e sulla gestione della memoria tipica del linguaggio Rust.
+
+### Funzionalità:
+- **Gestione Messaggistica**: Scambio di messaggi testuali in tempo reale tra client.
+- **Gruppi di Utenti**: Funzionalità di creazione gruppi per la condivisione di messaggi e sistema di ingresso su invito.
+- **Iscrizione Automatizzata**: Gestione delle richieste di iscrizione al server al primo avvio.
+- **Monitoraggio Prestazioni**: Generazione automatica di log (ogni 2 minuti) con dettagli sull'utilizzo della CPU e analisi della dimensione dell'eseguibile.
+- **Cross-Platform**: Supporto garantito per diverse piattaforme (es. Windows, Linux).
+
+---
+### 🛠️ Tecnologie e strumenti
+- [Rust](https://www.rust-lang.org/) (Core language per sicurezza e performance)
+- [RustRover](https://www.jetbrains.com/rust/) (Ambiente di sviluppo principale)
+- **Networking Stack**: Gestione socket client/server per la comunicazione real-time.
+
+---
+- [Ruggine](it/Programmazione_in_RUST/Ruggine)
+---
+</details>
 </details>
 
 ---
 <details>
-<summary>🇬🇧 English</summary>
+<summary>EN English</summary>
 
 In this repository I collect the projects developed, both individually and in groups, during my **Master's degree in Artificial Intelligence & Data Analytics** at Politecnico di Torino. They will be progressively added as my studies advance.  
 
