@@ -343,6 +343,30 @@ It provides dedicated functionalities for both **teachers** and **students**.
 - [Group Assignments](en/Web_Applications_I)
 ---
 </details>
+
+<details>
+<summary>System and device programming - Ruggine</summary>
+
+## Description:
+Development of a client/server application called **Ruggine**, designed for managing a multi-platform text chat. The project focuses on system performance and memory efficiency, leveraging Rust's core strengths.
+
+### Features:
+- **Messaging Management**: Real-time text message exchange between clients.
+- **User Groups**: Capability to create groups for message sharing and invitation-based entry system.
+- **Automated Registration**: Handles subscription requests to the server upon initial program launch.
+- **Performance Monitoring**: Automatic log generation (every 2 minutes) reporting CPU usage details and executable file size analysis.
+- **Cross-Platform**: Deployment-ready for multiple platforms (e.g., Windows, Linux).
+
+---
+### 🛠️ Technologies & Tools
+- [Rust](https://www.rust-lang.org/) (Core language for safety and performance)
+- [RustRover](https://www.jetbrains.com/rust/) (Primary IDE)
+- **Networking Stack**: Client/server socket management for real-time communication.
+
+---
+- [Ruggine](en/System_And_Device_Programming)
+---
+</details>
 </details>
  
 ---
