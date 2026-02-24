@@ -1,0 +1,25 @@
+# Rust build
+/target
+**/*.rs.bk
+
+# Database locale
+*.db
+
+# IDE / Editor
+.vscode/
+.idea/
+*.log
+
+# Windows
+*.exe
+*.dll
+*.pdb# macOS
+.DS_Store
+
+# SQLite
+*.db
+*.db-wal
+*.db-shm
+
+# Rust
+target/

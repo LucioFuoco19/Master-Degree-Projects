@@ -1,0 +1,48 @@
+
+
+***********************************
+TEST DI STRESS DELLA CHAT PRIVATA - 08/12/2025 11:24 test
+***********************************
+
+_____________________________________
+PROVA 1:
+- Informazioni: 10 utenti, durata 60 secondi, intervallo 1000 ms
+- Dati: 12/08/2025 11:26
+- Risultato: 600 / 600 messaggi (Efficacia 100,00%)
+_____________________________________
+
+_____________________________________
+PROVA 2:
+- Informazioni: 25 utenti, durata 60 secondi, intervallo 1000 ms
+- Dati: 12/08/2025 11:27
+- Risultato: 1500 / 1500 messaggi (Efficacia 100,00%)
+_____________________________________
+
+_____________________________________
+PROVA 3:
+- Informazioni: 50 utenti, durata 60 secondi, intervallo 1000 ms
+- Dati: 08/12/2025 11:29
+- Risultato: 3000 / 3000 messaggi (Efficacia 100,00%)
+_____________________________________
+
+_____________________________________
+PROVA 4:
+- Informazioni: 100 utenti, durata 60 secondi, intervallo 1000 ms
+- Dati: 12/08/2025 11:31
+- Risultato: 6000 / 6000 messaggi (Efficacia 100,00%)
+_____________________________________
+
+_____________________________________
+PROVA 5:
+- Informazioni: 150 utenti, durata 60 secondi, intervallo 1000 ms
+- Dati: 12/08/2025 11:35
+- Risultato: 9000 / 9000 messaggi (Efficacia 100,00%)
+_____________________________________
+
+_____________________________________
+PROVA 6:
+- Informazioni: 250 utenti, durata 60 secondi, intervallo 1000 ms
+- Dati: 12/08/2025 11:40
+- Risultato: 15000 / 15000 messaggi (Efficacia 100,00%)
+_____________________________________
+
