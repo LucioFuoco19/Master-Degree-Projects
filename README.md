@@ -195,7 +195,7 @@ Il progetto si focalizza sulla **Semantic Correspondence**, ovvero l'individuazi
 
 ###  Paper Scientifico
 Abbiamo redatto un paper tecnico che descrive l'architettura, i test effettuati e i risultati ottenuti.
-[![Paper PDF](https://img.shields.io/badge/Documentazione-Paper_Project-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](it/Advanced_Machine_Learning/Paper_Semantic_Correspondence.pdf)
+[![Paper PDF](https://img.shields.io/badge/Documentazione-Paper_Project-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](it/Advanced_Machine_Learning/Semantic-Correspondence--AML-project/Paper_Semantic_Correspondence.pdf)
 
 ---
 ###  Tecnologie e strumenti
@@ -205,7 +205,7 @@ Abbiamo redatto un paper tecnico che descrive l'architettura, i test effettuati 
 - [Google Colab](https://colab.research.google.com/) (Addestramento e inferenza)
 
 ---
-- [Semantic Correspondence Project](it/Advanced_Machine_Learning)
+- [Semantic Correspondence Project](it/Advanced_Machine_Learning/Semantic-Correspondence--AML-project)
 ---
 </details>
 <details>
@@ -453,7 +453,7 @@ This project focuses on **Semantic Correspondence**: finding pixel-level matches
 
 ###  Scientific Paper
 We authored a comprehensive technical paper detailing the methodology, experiments, and comparative results of the different backbones.
-[![Paper PDF](https://img.shields.io/badge/Documentation-Project_Paper-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](en/Advanced_Machine_Learning/Paper_Semantic_Correspondence.pdf)
+[![Paper PDF](https://img.shields.io/badge/Documentation-Project_Paper-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](en/Advanced_Machine_Learning/Semantic-Correspondence--AML-project/Paper_Semantic_Correspondence.pdf)
 
 ---
 ###  Technologies & Tools
@@ -463,7 +463,7 @@ We authored a comprehensive technical paper detailing the methodology, experimen
 - [Google Colab](https://colab.research.google.com/) (Training and inference)
 
 ---
-- [Semantic Correspondence Project](en/Advanced_Machine_Learning)
+- [Semantic Correspondence Project](en/Advanced_Machine_Learning/Semantic-Correspondence--AML-project)
 ---
 </details>
 <details>
