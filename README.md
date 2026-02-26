@@ -161,6 +161,7 @@ Offre funzionalità dedicate sia per i **docenti** che per gli **studenti**.
 </details>
 <details>
   <summary>Programmazione di Sistema</summary>
+  
 ## Descrizione: 
 Sviluppo di un'applicazione client/server denominata **Ruggine**, progettata per la gestione di una chat testuale multipiattaforma. Il progetto si focalizza sull'efficienza delle prestazioni e sulla gestione della memoria tipica del linguaggio Rust.
 
