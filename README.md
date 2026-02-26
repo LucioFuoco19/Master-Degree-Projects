@@ -28,7 +28,7 @@ Questa versione semplificata di **Pac-Man** riproduce il classico gioco arcade c
 - **Fantasma con IA**: è stato implementato un fantasma che col progredire dei secondi aumenta progressivamente la propria velocità. I suoi movimenti sono guidati da un algoritmo basato sulla **distanza euclidea**, che lo indirizza verso Pac-Man.  
 - **Visualizzazione punteggio tramite CAN**: è stata aggiunta una modalità che permette di visualizzare il punteggio del giocatore attraverso l’interfaccia di comunicazione **CAN bus**.  
 ---
-### 🛠️ Tecnologie e strumenti
+###  Tecnologie e strumenti
 
 - **Linguaggio di programmazione**:  
   - [C](https://en.wikipedia.org/wiki/C_(programming_language)) (sviluppo del gioco, gestione periferiche e logica di gioco)
@@ -83,7 +83,7 @@ Il progetto è stato sviluppato durante il corso di *Ingegneria del Software* (a
   - Efficienza: tempo di risposta < 0,5 secondi.  
   - Localizzazione: timestamp in UTC.  
 ---
-### 🛠️ Tecnologie e strumenti
+###  Tecnologie e strumenti
 
 - **Linguaggio di programmazione**:  
   - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (implementazione delle API, logica applicativa, gestione dei moduli)
@@ -135,7 +135,7 @@ Offre funzionalità dedicate sia per i **docenti** che per gli **studenti**.
   - **Database**: SQLite pre-popolato con almeno 20 studenti e 2 docenti (con almeno 1 assignment aperto e 1 chiuso).  
   - **Autenticazione**: accesso separato per docenti e studenti.  
 ---
-### 🛠️ Tecnologie e Strumenti
+###  Tecnologie e Strumenti
 
 - **Frontend**:  
   - [React 19](https://react.dev/) (SPA, Strict Mode, functional components, hooks, state, context, effects)  
@@ -172,7 +172,7 @@ Sviluppo di un'applicazione client/server denominata **Ruggine**, progettata per
 - **Cross-Platform**: Supporto garantito per diverse piattaforme (es. Windows, Linux).
 
 ---
-### 🛠️ Tecnologie e strumenti
+###  Tecnologie e strumenti
 - [Rust](https://www.rust-lang.org/) (Core language per sicurezza e performance)
 - [RustRover](https://www.jetbrains.com/rust/) (Ambiente di sviluppo principale)
 - **Networking Stack**: Gestione socket client/server per la comunicazione real-time.
@@ -193,12 +193,12 @@ Il progetto si focalizza sulla **Semantic Correspondence**, ovvero l'individuazi
 - **Window Soft-Argmax**: Implementazione di una regola di predizione avanzata per ottenere precisione sub-pixel e ridurre il rumore rispetto all'argmax classico.
 - **Analisi PCK**: Valutazione rigorosa tramite la metrica *Percentage of Correct Keypoints* a diverse soglie di precisione.
 
-### 📄 Paper Scientifico
+###  Paper Scientifico
 Abbiamo redatto un paper tecnico che descrive l'architettura, i test effettuati e i risultati ottenuti.
-[![Paper PDF](https://img.shields.io/badge/Documentation-Project_Paper-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](it/Advanced_Machine_Learning/Semantic-Correspondence--AML-project/Paper_Semantic_Correspondence.pdf)
+[![Paper PDF](https://img.shields.io/badge/Documentazione-Paper_Project-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](it/Advanced_Machine_Learning/Paper_Semantic_Correspondence.pdf)
 
 ---
-### 🛠️ Tecnologie e strumenti
+###  Tecnologie e strumenti
 - [PyTorch](https://pytorch.org/) (Sviluppo modelli e fine-tuning)
 - **Backbones**: DINOv2, DINOv3, Segment Anything (SAM), Stable Diffusion Features
 - **Dataset**: SPair-71k
@@ -211,17 +211,17 @@ Abbiamo redatto un paper tecnico che descrive l'architettura, i test effettuati 
 <details>
 <summary>Machine Learning for vision and multimedia - Speech Emotion Recognition</summary>
 
-## 📄 Descrizione
+##  Descrizione
 Questo progetto mira a progettare e implementare un sistema di apprendimento automatico in grado di riconoscere lo stato emotivo espresso nel linguaggio umano. L'obiettivo è mappare le caratteristiche acustiche e prosodiche (come altezza, energia e forma spettrale) in etichette emotive discrete. Il sistema utilizza il set di dati **RAVDESS** per classificare 8 diverse emozioni (neutrale, calma, felice, triste, arrabbiata, timorosa, disgusto, sorpresa).
 
-### 🧠 Architettura ibrida: CNN-BiLSTM + Attenzione
+###  Architettura ibrida: CNN-BiLSTM + Attenzione
 Il modello elabora gli spettrogrammi Mel attraverso una pipeline integrata:
 * **Estrazione delle caratteristiche spaziali**: 3 strati di **CNN** per catturare modelli locali negli spettrogrammi.
 * **Modellazione temporale**: uno strato **BiLSTM** (LSTM bidirezionale) per analizzare le dipendenze temporali a lungo termine.
 * **Meccanismo di attenzione**: un **livello di attenzione** per focalizzare il modello sui segmenti audio con il maggiore carico emotivo.
 * **Testa di classificazione**: 2 livelli finali completamente connessi (FC) per la previsione della classe.
 
-### 🛠️ Caratteristiche principali e fasi (fasi del progetto)
+###  Caratteristiche principali e fasi (fasi del progetto)
 * **Fase 1: Modello di base**: Sviluppo di un modello iniziale sugli spettrogrammi Mel con pre-elaborazione standard (riduzione del silenzio, normalizzazione e segmentazione).
 * **Fase 2: Robustezza e aumento dei dati**: implementazione di tecniche di aumento dei dati (aggiunta di rumore, spostamenti di tono/tempo) per migliorare la robustezza in condizioni acustiche variabili espandendo il set di dati a **9.000+ campioni**.
 * **Valutazione indipendente dal relatore**: convalida rigorosa tramite **Actor Split**, garantendo che il modello venga testato su attori mai visti durante la formazione (ID 21-24).
@@ -229,13 +229,13 @@ Il modello elabora gli spettrogrammi Mel attraverso una pipeline integrata:
 
 ---
 
-### 📄 Articolo scientifico
+###  Articolo scientifico
 Abbiamo compilato un documento tecnico completo che documenta la metodologia, la giustificazione delle scelte architettoniche e il confronto quantitativo tra i modelli di Fase 1 e Fase 2.
-[![Carta PDF](https://img.shields.io/badge/Documentation-Project_Paper-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](Speech_Emotion_Recognition_Paper.pdf)
+[![Paper PDF](https://img.shields.io/badge/Documentation-Project_Paper-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](it/Machine_Learning_for_Vision_and_Multimedia/Speech_Emotion_Recognition_Paper.pdf)
 
 ---
 
-### 📂 Struttura del progetto
+###  Struttura del progetto
 "'testo
 Discorso_Emozione_Riconoscimento/
 ├── data/ # Script per il caricamento e la pre-elaborazione
@@ -247,7 +247,7 @@ Discorso_Emozione_Riconoscimento/
 ├── train_notebook.ipynb # Pipeline ottimizzata per Google Colab
 └── requirements.txt # Dipendenze del progetto
 
-## 🛠️ Tecnologie e strumenti
+##  Tecnologie e strumenti
 
 Il progetto è stato sviluppato integrando librerie avanzate per il deep learning e l'elaborazione del segnale audio, ottimizzando le prestazioni sia in ambienti locali che cloud.
 
@@ -260,6 +260,9 @@ Il progetto è stato sviluppato integrando librerie avanzate per il deep learnin
 * **[Google Colab](https://colab.research.google.com/)**: Ambiente di esecuzione cloud utilizzato per sfruttare l'accelerazione GPU durante le fasi di addestramento intensivo.
 
 ---
+
+- [Speech Emotion Recognition](it/Machine_Learning_for_Vision_and_Multimedia)
+
 </details>
 </details>
 
@@ -289,7 +292,7 @@ This simplified version of **Pac-Man** reproduces the classic arcade game with t
 - **AI Ghost**: a ghost was implemented which progressively increases its speed as time passes. Its movement is guided by an algorithm based on the **Euclidean distance**, which directs it toward Pac-Man.  
 - **Score visualization via CAN**: a feature was added to display the player’s score using the **CAN bus** communication interface.  
 ---
-### 🛠️ Technologies & Tools
+###  Technologies & Tools
 
 - **Programming Language**:  
   - [C](https://en.wikipedia.org/wiki/C_(programming_language)) (game development, peripheral management, and game logic)
@@ -344,7 +347,7 @@ The project was developed during the *Software Engineering* course (AY 2024–20
   - Efficiency: response time < 0.5 sec.  
   - Localization: timestamps in UTC.  
 ---
-### 🛠️ Technologies & Tools
+###  Technologies & Tools
 
 - **Programming Language**:  
   - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (API implementation, application logic, module management)
@@ -398,7 +401,7 @@ It provides dedicated functionalities for both **teachers** and **students**.
   - **Database**: SQLite preloaded with at least 20 students and 2 teachers (with at least 1 open and 1 closed assignment).  
   - **Authentication**: separate login and access for teachers and students.
 ---
-### 🛠️ Technologies & Tools
+###  Technologies & Tools
 
 - **Frontend**:  
   - [React 19](https://react.dev/) (SPA, Strict Mode, functional components, hooks, state, context, effects)  
@@ -438,7 +441,7 @@ Development of a client/server application called **Ruggine**, designed for mana
 - **Cross-Platform**: Deployment-ready for multiple platforms (e.g., Windows, Linux).
 
 ---
-### 🛠️ Technologies & Tools
+###  Technologies & Tools
 - [Rust](https://www.rust-lang.org/) (Core language for safety and performance)
 - [RustRover](https://www.jetbrains.com/rust/) (Primary IDE)
 - **Networking Stack**: Client/server socket management for real-time communication.
@@ -459,9 +462,9 @@ This project focuses on **Semantic Correspondence**: finding pixel-level matches
 - [cite_start]**Window Soft-Argmax**: Implementation of a sub-pixel refinement rule to overcome the limitations of discrete argmax, making predictions robust to noise[cite: 23, 52, 54].
 - [cite_start]**PCK Evaluation**: Rigorous performance tracking using the *Percentage of Correct Keypoints* metric across multiple thresholds (0.05, 0.1, 0.2)[cite: 38, 39, 40].
 
-### 📄 Scientific Paper
+###  Scientific Paper
 We authored a comprehensive technical paper detailing the methodology, experiments, and comparative results of the different backbones.
-[![Paper PDF](https://img.shields.io/badge/Documentation-Project_Paper-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](en/Advanced_Machine_Learning/Semantic-Correspondence--AML-project/Paper_Semantic_Correspondence.pdf)
+[![Paper PDF](https://img.shields.io/badge/Documentation-Project_Paper-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](en/Advanced_Machine_Learning/Paper_Semantic_Correspondence.pdf)
 
 ---
 ### 🛠️ Technologies & Tools
@@ -477,17 +480,17 @@ We authored a comprehensive technical paper detailing the methodology, experimen
 <details>
 <summary>Machine Learning for vision and multimedia - Speech Emotion Recognition</summary>
 
-## 📄 Description
+##  Description
 This project aims to design and implement a machine learning system capable of recognizing the emotional state expressed in human speech. The goal is to map acoustic and prosodic features (such as pitch, energy, and spectral shape) into discrete emotional labels. The system uses the **RAVDESS** dataset to classify 8 different emotions (neutral, calm, happy, sad, angry, fearful, disgust, surprised).
 
-### 🧠 Hybrid Architecture: CNN-BiLSTM + Attention
+###  Hybrid Architecture: CNN-BiLSTM + Attention
 The model processes Mel spectrograms through an integrated pipeline:
 * **Spatial Feature Extraction**: 3 layers of **CNN** to capture local patterns in spectrograms.
 * **Temporal Modeling**: A **BiLSTM** (Bidirectional LSTM) layer to analyze long-term temporal dependencies.
 * **Attention Mechanism**: An **Attention Layer** to focus the model on the audio segments with the greatest emotional load.
 * **Classification Head**: 2 final Fully Connected (FC) layers for class prediction.
 
-### 🛠️ Key Features & Stages (Project Stages)
+###  Key Features & Stages (Project Stages)
 * **Phase 1: Baseline Model**: Development of an initial model on Mel spectrograms with standard pre-processing (silence trimming, normalization and segmentation).
 * **Phase 2: Robustness & Data Augmentation**: Implementation of data augmentation techniques (noise addition, pitch/time shifts) to improve robustness under variable acoustic conditions by expanding the dataset to **9,000+ samples**.
 * **Speaker-Independent Evaluation**: Rigorous validation via **Actor Split**, ensuring that the model is tested on actors never seen during training (ID 21-24).
@@ -495,13 +498,13 @@ The model processes Mel spectrograms through an integrated pipeline:
 
 ---
 
-### 📄 Scientific Paper
+###  Scientific Paper
 We have compiled a comprehensive technical paper documenting the methodology, justification of architectural choices, and quantitative comparison between the Phase 1 and Phase 2 models.
-[![PDF Paper](https://img.shields.io/badge/Documentation-Project_Paper-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](Speech_Emotion_Recognition_Paper.pdf)
+[![Paper PDF](https://img.shields.io/badge/Documentation-Project_Paper-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](en/Machine_Learning_for_Vision_and_Multimedia/Speech_Emotion_Recognition_Paper.pdf)
 
 ---
 
-### 📂 Project Structure
+###  Project Structure
 "'text
 Speach_Emotion_Recognition/
 ├── data/ # Script for loading and pre-processing
@@ -513,7 +516,7 @@ Speach_Emotion_Recognition/
 ├── train_notebook.ipynb # Google Colab-optimized pipeline
 └── requirements.txt # Project Dependencies
 
-## 🛠️ Technologies & Tools
+##  Technologies & Tools
 
 The project was developed by integrating advanced libraries for deep learning and audio signal processing, optimizing performance in both local and cloud environments.
 
@@ -526,6 +529,9 @@ The project was developed by integrating advanced libraries for deep learning an
 * **[Google Colab](https://colab.research.google.com/)**: Cloud execution environment used to take advantage of GPU acceleration during intensive training phases.
 
 ---
+
+- [Speech Emotion Recognition](en/Machine_Learning_for_Vision_and_Multimedia)
+
 </details>
 </details>
  
