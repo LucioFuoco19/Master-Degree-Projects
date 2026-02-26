@@ -235,17 +235,6 @@ Abbiamo compilato un documento tecnico completo che documenta la metodologia, la
 
 ---
 
-###  Struttura del progetto
-"'testo
-Discorso_Emozione_Riconoscimento/
-├── data/ # Script per il caricamento e la pre-elaborazione
-├── modelli/ # Architettura CNN-BiLSTM + Attenzione
-├── utils/ # Callback, grafici e matrici di confusione
-├── dataset/ # RawData e spettrogrammi (.npy)
-├── checkpoint/ # Modelli salvati e registri degli esperimenti
-├── train.py # Script principale per training + eval
-├── train_notebook.ipynb # Pipeline ottimizzata per Google Colab
-└── requirements.txt # Dipendenze del progetto
 
 ##  Tecnologie e strumenti
 
@@ -467,7 +456,7 @@ We authored a comprehensive technical paper detailing the methodology, experimen
 [![Paper PDF](https://img.shields.io/badge/Documentation-Project_Paper-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](en/Advanced_Machine_Learning/Paper_Semantic_Correspondence.pdf)
 
 ---
-### 🛠️ Technologies & Tools
+###  Technologies & Tools
 - [PyTorch](https://pytorch.org/) (Model development and fine-tuning)
 - [cite_start]**Backbones**: DINOv2, DINOv3, Segment Anything (SAM), Stable Diffusion Features [cite: 34, 35, 36, 84]
 - [cite_start]**Datasets**: SPair-71k [cite: 26]
@@ -504,17 +493,6 @@ We have compiled a comprehensive technical paper documenting the methodology, ju
 
 ---
 
-###  Project Structure
-"'text
-Speach_Emotion_Recognition/
-├── data/ # Script for loading and pre-processing
-├── models/ # CNN-BiLSTM Architecture + Attention
-├── utils/ # Callbacks, graphs and confusion matrices
-├── dataset/ # RawData and spectrograms (.npy)
-├── checkpoints/ # Saved models and experiment logs
-├── train.py # Main script for training + eval
-├── train_notebook.ipynb # Google Colab-optimized pipeline
-└── requirements.txt # Project Dependencies
 
 ##  Technologies & Tools
 
@@ -529,9 +507,8 @@ The project was developed by integrating advanced libraries for deep learning an
 * **[Google Colab](https://colab.research.google.com/)**: Cloud execution environment used to take advantage of GPU acceleration during intensive training phases.
 
 ---
-
 - [Speech Emotion Recognition](en/Machine_Learning_for_Vision_and_Multimedia)
-
+---
 </details>
 </details>
  
