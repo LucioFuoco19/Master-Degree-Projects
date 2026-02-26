@@ -208,6 +208,59 @@ Abbiamo redatto un paper tecnico che descrive l'architettura, i test effettuati 
 - [Semantic Correspondence Project](it/Advanced_Machine_Learning)
 ---
 </details>
+<details>
+<summary>Machine Learning for vision and multimedia - Speech Emotion Recognition</summary>
+
+## 📄 Descrizione
+Questo progetto mira a progettare e implementare un sistema di apprendimento automatico in grado di riconoscere lo stato emotivo espresso nel linguaggio umano. L'obiettivo è mappare le caratteristiche acustiche e prosodiche (come altezza, energia e forma spettrale) in etichette emotive discrete. Il sistema utilizza il set di dati **RAVDESS** per classificare 8 diverse emozioni (neutrale, calma, felice, triste, arrabbiata, timorosa, disgusto, sorpresa).
+
+### 🧠 Architettura ibrida: CNN-BiLSTM + Attenzione
+Il modello elabora gli spettrogrammi Mel attraverso una pipeline integrata:
+* **Estrazione delle caratteristiche spaziali**: 3 strati di **CNN** per catturare modelli locali negli spettrogrammi.
+* **Modellazione temporale**: uno strato **BiLSTM** (LSTM bidirezionale) per analizzare le dipendenze temporali a lungo termine.
+* **Meccanismo di attenzione**: un **livello di attenzione** per focalizzare il modello sui segmenti audio con il maggiore carico emotivo.
+* **Testa di classificazione**: 2 livelli finali completamente connessi (FC) per la previsione della classe.
+
+### 🛠️ Caratteristiche principali e fasi (fasi del progetto)
+* **Fase 1: Modello di base**: Sviluppo di un modello iniziale sugli spettrogrammi Mel con pre-elaborazione standard (riduzione del silenzio, normalizzazione e segmentazione).
+* **Fase 2: Robustezza e aumento dei dati**: implementazione di tecniche di aumento dei dati (aggiunta di rumore, spostamenti di tono/tempo) per migliorare la robustezza in condizioni acustiche variabili espandendo il set di dati a **9.000+ campioni**.
+* **Valutazione indipendente dal relatore**: convalida rigorosa tramite **Actor Split**, garantendo che il modello venga testato su attori mai visti durante la formazione (ID 21-24).
+* **Analisi degli errori**: Analisi qualitativa delle confusioni tra stati emotivi simili (ad es. Felice vs Sorpreso) e discussione sui limiti di generalizzazione.
+
+---
+
+### 📄 Articolo scientifico
+Abbiamo compilato un documento tecnico completo che documenta la metodologia, la giustificazione delle scelte architettoniche e il confronto quantitativo tra i modelli di Fase 1 e Fase 2.
+[![Carta PDF](https://img.shields.io/badge/Documentation-Project_Paper-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](Speech_Emotion_Recognition_Paper.pdf)
+
+---
+
+### 📂 Struttura del progetto
+"'testo
+Discorso_Emozione_Riconoscimento/
+├── data/ # Script per il caricamento e la pre-elaborazione
+├── modelli/ # Architettura CNN-BiLSTM + Attenzione
+├── utils/ # Callback, grafici e matrici di confusione
+├── dataset/ # RawData e spettrogrammi (.npy)
+├── checkpoint/ # Modelli salvati e registri degli esperimenti
+├── train.py # Script principale per training + eval
+├── train_notebook.ipynb # Pipeline ottimizzata per Google Colab
+└── requirements.txt # Dipendenze del progetto
+
+## 🛠️ Tecnologie e strumenti
+
+Il progetto è stato sviluppato integrando librerie avanzate per il deep learning e l'elaborazione del segnale audio, ottimizzando le prestazioni sia in ambienti locali che cloud.
+
+* **[TensorFlow](https://www.tensorflow.org/) / [Keras](https://keras.io/)**: Framework principale utilizzato per progettare e addestrare l'architettura ibrida CNN-BiLSTM con meccanismo di attenzione.
+* **[Libri](https://librosa.org/)**: Libreria fondamentale per l'analisi del segnale audio, utilizzata per la pre-elaborazione (riduzione del silenzio), l'aumento dei dati e l'estrazione dello spettrogramma Mel.
+* **[NumPy](https://numpy.org/)**: Utilizzato per la manipolazione efficiente dei tensori e il salvataggio dei set di dati elaborati nel formato '.npy'.
+* **[Scikit-learn](https://scikit-learn.org/)**: Utilizzato per gestire le suddivisioni dei set di dati (Random vs Actor Split) e per calcolare metriche di valutazione quali F1-Score e Confusion Matrix.
+* **[Pandas](https://pandas.pydata.org/)**: Utilizzato per gestire i registri di formazione ed esportare le metriche in formato CSV.
+* **[Matplotlib](https://matplotlib.org/) e [Seaborn](https://seaborn.pydata.org/)**: Strumento per visualizzare grafici di tendenza (accuratezza/perdita) e rappresentare graficamente matrici di confusione.
+* **[Google Colab](https://colab.research.google.com/)**: Ambiente di esecuzione cloud utilizzato per sfruttare l'accelerazione GPU durante le fasi di addestramento intensivo.
+
+---
+</details>
 </details>
 
 ---
@@ -419,6 +472,59 @@ We authored a comprehensive technical paper detailing the methodology, experimen
 
 ---
 - [Semantic Correspondence Project](en/Advanced_Machine_Learning)
+---
+</details>
+<details>
+<summary>Machine Learning for vision and multimedia - Speech Emotion Recognition</summary>
+
+## 📄 Description
+This project aims to design and implement a machine learning system capable of recognizing the emotional state expressed in human speech. The goal is to map acoustic and prosodic features (such as pitch, energy, and spectral shape) into discrete emotional labels. The system uses the **RAVDESS** dataset to classify 8 different emotions (neutral, calm, happy, sad, angry, fearful, disgust, surprised).
+
+### 🧠 Hybrid Architecture: CNN-BiLSTM + Attention
+The model processes Mel spectrograms through an integrated pipeline:
+* **Spatial Feature Extraction**: 3 layers of **CNN** to capture local patterns in spectrograms.
+* **Temporal Modeling**: A **BiLSTM** (Bidirectional LSTM) layer to analyze long-term temporal dependencies.
+* **Attention Mechanism**: An **Attention Layer** to focus the model on the audio segments with the greatest emotional load.
+* **Classification Head**: 2 final Fully Connected (FC) layers for class prediction.
+
+### 🛠️ Key Features & Stages (Project Stages)
+* **Phase 1: Baseline Model**: Development of an initial model on Mel spectrograms with standard pre-processing (silence trimming, normalization and segmentation).
+* **Phase 2: Robustness & Data Augmentation**: Implementation of data augmentation techniques (noise addition, pitch/time shifts) to improve robustness under variable acoustic conditions by expanding the dataset to **9,000+ samples**.
+* **Speaker-Independent Evaluation**: Rigorous validation via **Actor Split**, ensuring that the model is tested on actors never seen during training (ID 21-24).
+* **Error Analysis**: Qualitative analysis of confusions between similar emotional states (e.g. Happy vs Surprised) and discussion of generalization limits.
+
+---
+
+### 📄 Scientific Paper
+We have compiled a comprehensive technical paper documenting the methodology, justification of architectural choices, and quantitative comparison between the Phase 1 and Phase 2 models.
+[![PDF Paper](https://img.shields.io/badge/Documentation-Project_Paper-red?style=flat&logo=adobe-acrobat-reader&logoColor=white)](Speech_Emotion_Recognition_Paper.pdf)
+
+---
+
+### 📂 Project Structure
+"'text
+Speach_Emotion_Recognition/
+├── data/ # Script for loading and pre-processing
+├── models/ # CNN-BiLSTM Architecture + Attention
+├── utils/ # Callbacks, graphs and confusion matrices
+├── dataset/ # RawData and spectrograms (.npy)
+├── checkpoints/ # Saved models and experiment logs
+├── train.py # Main script for training + eval
+├── train_notebook.ipynb # Google Colab-optimized pipeline
+└── requirements.txt # Project Dependencies
+
+## 🛠️ Technologies & Tools
+
+The project was developed by integrating advanced libraries for deep learning and audio signal processing, optimizing performance in both local and cloud environments.
+
+* **[TensorFlow](https://www.tensorflow.org/) / [Keras](https://keras.io/)**: Main framework used for designing and training hybrid CNN-BiLSTM architecture with Attention mechanism.
+* **[Books](https://librosa.org/)**: Fundamental library for audio signal analysis, used for pre-processing (silence trimming), Data Augmentation and Mel spectrogram extraction.
+* **[NumPy](https://numpy.org/)**: Used for efficient tensor manipulation and saving processed datasets in '.npy' format.
+* **[Scikit-learn](https://scikit-learn.org/)**: Used to manage dataset splits (Random vs Actor Split) and to calculate evaluation metrics such as F1-Score and Confusion Matrix.
+* **[Pandas](https://pandas.pydata.org/)**: Used for managing training logs and exporting metrics to CSV format.
+* **[Matplotlib](https://matplotlib.org/) & [Seaborn](https://seaborn.pydata.org/)**: Tool for visualizing trend plots (Accuracy/Loss) and graphing confusion matrices.
+* **[Google Colab](https://colab.research.google.com/)**: Cloud execution environment used to take advantage of GPU acceleration during intensive training phases.
+
 ---
 </details>
 </details>

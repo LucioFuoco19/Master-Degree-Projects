@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Heavy Data
+# We exclude all contents of the dataset folder, except the structure or any readme
+dataset/*/
+*.npy
+
+# Models and Results
+# Exclude all result folders starting with 'res'
+checkpoints/
+res*/
+*.keras
+*.h5
+*.csv
+*.png
+*.txt
+
+# Virtual Environments
+venv/
+.env
+
+# IDE settings
+.vscode/
+.idea/
